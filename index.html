@@ -173,27 +173,19 @@
         </div>
     </header>
 
-    <!-- Hero Section with Banner -->
-    <section class="relative overflow-hidden text-white">
-        <div class="relative w-full h-[400px] md:h-[500px]">
-            <!-- Banner Background Image -->
-            <img src="images/banner.svg" alt="AureliAxis Pharmaceuticals Banner" class="w-full h-full object-cover">
-            
-            <!-- Overlay Content -->
-            <div class="absolute inset-0 flex items-center justify-center">
-                <div class="container mx-auto px-4">
-                    <div class="max-w-3xl mx-auto text-center">
-                        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-shadow">创新驱动健康，科技引领未来</h1>
-                        <p class="text-xl md:text-2xl mb-8 opacity-90">AureliAxis Pharmaceuticals 致力于为患者提供高质量的创新治疗方案</p>
-                        <div class="flex flex-col sm:flex-row justify-center gap-4">
-                            <a href="#products" class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300">
-                                探索产品管线
-                            </a>
-                            <a href="#about" class="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary transition duration-300">
-                                了解公司
-                            </a>
-                        </div>
-                    </div>
+    <!-- Hero Section - First Version -->
+    <section class="relative overflow-hidden gradient-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-shadow">创新驱动健康，科技引领未来</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">AureliAxis Pharmaceuticals 致力于为患者提供高质量的创新治疗方案</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#products" class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300">
+                        探索产品管线
+                    </a>
+                    <a href="#about" class="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary transition duration-300">
+                        了解公司
+                    </a>
                 </div>
             </div>
         </div>
@@ -228,43 +220,50 @@
             </div>
             
             <div class="mt-16">
-                <h3 class="text-2xl font-semibold text-dark mb-6 text-center">数字化能力域</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 text-center card-hover">
-                        <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
-                            <i class="fa fa-user-md text-white text-xl"></i>
+                <h3 class="text-2xl font-semibold text-dark mb-2 text-center">数字化能力域</h3>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">我们构建了全面的数字化能力域，通过六大核心系统赋能业务发展，提升运营效率和决策质量</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 text-center card-hover shadow-md">
+                        <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-user-md text-white text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-dark">HCP360</h4>
+                        <h4 class="text-xl font-semibold text-dark mb-2">HCP360</h4>
+                        <p class="text-gray-600">医生全生命周期管理系统，实现精准定位、高效互动和价值传递</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 text-center card-hover">
-                        <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
-                            <i class="fa fa-hospital-o text-white text-xl"></i>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 text-center card-hover shadow-md">
+                        <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-hospital-o text-white text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-dark">HCO360</h4>
+                        <h4 class="text-xl font-semibold text-dark mb-2">HCO360</h4>
+                        <p class="text-gray-600">医院全生命周期管理系统，优化医院合作，提升医疗服务质量</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 text-center card-hover">
-                        <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
-                            <i class="fa fa-line-chart text-white text-xl"></i>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 text-center card-hover shadow-md">
+                        <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-line-chart text-white text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-dark">REP360</h4>
+                        <h4 class="text-xl font-semibold text-dark mb-2">REP360</h4>
+                        <p class="text-gray-600">销售代表KPI可视化系统，实现分层级权限管控和精准KPI洞察</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 text-center card-hover">
-                        <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
-                            <i class="fa fa-flask text-white text-xl"></i>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 text-center card-hover shadow-md">
+                        <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-flask text-white text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-dark">Medical360</h4>
+                        <h4 class="text-xl font-semibold text-dark mb-2">Medical360</h4>
+                        <p class="text-gray-600">医学事务管理系统，支持MSL工作流程和医学洞察管理</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 text-center card-hover">
-                        <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
-                            <i class="fa fa-file-text-o text-white text-xl"></i>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 text-center card-hover shadow-md">
+                        <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-file-text-o text-white text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-dark">Content360</h4>
+                        <h4 class="text-xl font-semibold text-dark mb-2">Content360</h4>
+                        <p class="text-gray-600">内容管理系统，实现医学内容的创建、管理和分发</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-4 text-center card-hover">
-                        <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
-                            <i class="fa fa-shield text-white text-xl"></i>
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 text-center card-hover shadow-md">
+                        <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-shield text-white text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-dark">Compliance360</h4>
+                        <h4 class="text-xl font-semibold text-dark mb-2">Compliance360</h4>
+                        <p class="text-gray-600">合规管理系统，确保业务运营符合法规要求和公司政策</p>
                     </div>
                 </div>
             </div>
@@ -575,13 +574,43 @@
                                         <td class="border border-gray-200 p-3">2</td>
                                     </tr>
                                     <tr class="hover:bg-light">
+                                        <td class="border border-gray-200 p-3 font-medium">HCO360负责人</td>
+                                        <td class="border border-gray-200 p-3">负责HCO360系统开发和维护</td>
+                                        <td class="border border-gray-200 p-3">2</td>
+                                    </tr>
+                                    <tr class="hover:bg-light">
                                         <td class="border border-gray-200 p-3 font-medium">REP360负责人</td>
                                         <td class="border border-gray-200 p-3">负责REP360系统开发和维护</td>
                                         <td class="border border-gray-200 p-3">2</td>
                                     </tr>
                                     <tr class="hover:bg-light">
+                                        <td class="border border-gray-200 p-3 font-medium">Medical360负责人</td>
+                                        <td class="border border-gray-200 p-3">负责Medical360系统开发和维护</td>
+                                        <td class="border border-gray-200 p-3">2</td>
+                                    </tr>
+                                    <tr class="hover:bg-light">
+                                        <td class="border border-gray-200 p-3 font-medium">Content360负责人</td>
+                                        <td class="border border-gray-200 p-3">负责Content360系统开发和维护</td>
+                                        <td class="border border-gray-200 p-3">2</td>
+                                    </tr>
+                                    <tr class="hover:bg-light">
+                                        <td class="border border-gray-200 p-3 font-medium">Compliance360负责人</td>
+                                        <td class="border border-gray-200 p-3">负责Compliance360系统开发和维护</td>
+                                        <td class="border border-gray-200 p-3">2</td>
+                                    </tr>
+                                    <tr class="hover:bg-light">
                                         <td class="border border-gray-200 p-3 font-medium">数据分析师</td>
                                         <td class="border border-gray-200 p-3">负责数据分析和洞察挖掘</td>
+                                        <td class="border border-gray-200 p-3">4</td>
+                                    </tr>
+                                    <tr class="hover:bg-light">
+                                        <td class="border border-gray-200 p-3 font-medium">前端开发工程师</td>
+                                        <td class="border border-gray-200 p-3">负责系统前端开发和用户界面设计</td>
+                                        <td class="border border-gray-200 p-3">4</td>
+                                    </tr>
+                                    <tr class="hover:bg-light">
+                                        <td class="border border-gray-200 p-3 font-medium">后端开发工程师</td>
+                                        <td class="border border-gray-200 p-3">负责系统后端开发和数据库管理</td>
                                         <td class="border border-gray-200 p-3">4</td>
                                     </tr>
                                 </tbody>
@@ -1088,7 +1117,7 @@
                                 了解详情
                                 <i class="fa fa-arrow-right ml-2"></i>
                             </a>
-                            <a href="http://localhost:3001" target="_blank" class="text-primary font-medium flex items-center hover:underline">
+                            <a href="https://vita-liang.github.io/insight-360/" target="_blank" class="text-primary font-medium flex items-center hover:underline">
                                 访问系统
                                 <i class="fa fa-external-link ml-2"></i>
                             </a>
@@ -1120,6 +1149,10 @@
                             <a href="rep360.html" class="bg-primary text-white font-semibold py-2 px-6 rounded-lg hover:bg-secondary transition duration-300 inline-flex items-center">
                                 了解详情
                                 <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="https://vita-liang.github.io/rep360-manager/" target="_blank" class="text-primary font-medium flex items-center hover:underline">
+                                访问系统
+                                <i class="fa fa-external-link ml-2"></i>
                             </a>
                         </div>
                     </div>
