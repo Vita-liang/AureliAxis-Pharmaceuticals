@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="aureliGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D9CEC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#aureliGradient)" opacity="0.1"/>
+  
+  <!-- DNA Double Helix -->
+  <g transform="translate(100, 100)">
+    <!-- Left Strand -->
+    <path d="M-30 -60 Q-50 -30 -30 0 Q-10 30 -30 60" 
+          stroke="#4A90E2" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Right Strand -->
+    <path d="M30 -60 Q50 -30 30 0 Q10 30 30 60" 
+          stroke="#5D9CEC" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Cross Links -->
+    <line x1="-25" y1="-45" x2="25" y2="-45" stroke="#4A90E2" stroke-width="3" opacity="0.6"/>
+    <line x1="-20" y1="-15" x2="20" y2="-15" stroke="#5D9CEC" stroke-width="3" opacity="0.6"/>
+    <line x1="-20" y1="15" x2="20" y2="15" stroke="#4A90E2" stroke-width="3" opacity="0.6"/>
+    <line x1="-25" y1="45" x2="25" y2="45" stroke="#5D9CEC" stroke-width="3" opacity="0.6"/>
+    
+    <!-- Target Symbol -->
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#0A3D62" stroke-width="3"/>
+    <circle cx="0" cy="0" r="8" fill="#0A3D62"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#0A3D62" stroke-width="2"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#0A3D62" stroke-width="2"/>
+  </g>
+  
+  <!-- Product Label -->
+  <text x="100" y="180" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A3D62" text-anchor="middle">AureliMab™</text>
+</svg>

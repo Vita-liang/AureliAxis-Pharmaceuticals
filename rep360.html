@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REP360 - AureliAxis Pharmaceuticals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A90E2',
+                        secondary: '#5D9CEC',
+                        accent: '#E6F2FF',
+                        success: '#00B42A',
+                        warning: '#FF7D00',
+                        danger: '#D9534F',
+                        dark: '#0A3D62',
+                        light: '#F6F9FB'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #4A90E2, #5D9CEC); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(74, 144, 226, 0.15); }
+    </style>
+</head>
+<body class="font-inter bg-light text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="logo-container">
+                        <img src="images/logo.svg" alt="AureliAxis Pharmaceuticals" class="h-12 w-auto object-contain" onerror="this.src='images/logo.png'">
+                    </div>
+                </a>
+                <a href="index.html" class="text-primary hover:text-secondary font-medium flex items-center">
+                    <i class="fa fa-arrow-left mr-2"></i>
+                    返回首页
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">REP360</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">移动端管理层KPI可视化系统 - 分层级权限管控+精准KPI洞察</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300">
+                    <i class="fa fa-mobile mr-2"></i>下载APP
+                </button>
+                <button class="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary transition duration-300">
+                    <i class="fa fa-book mr-2"></i>查看文档
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">核心功能</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-user-circle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3 text-center">角色一键切换</h3>
+                    <p class="text-gray-700 text-center">支持用户在不同角色间快速切换，实时刷新权限和数据</p>
+                </div>
+                
+                <div class="bg-light rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-dashboard text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3 text-center">分层级KPI驾驶舱</h3>
+                    <p class="text-gray-700 text-center">根据用户角色展示不同层级的KPI数据，支持数据钻取</p>
+                </div>
+                
+                <div class="bg-light rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-bell text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3 text-center">智能交互与预警</h3>
+                    <p class="text-gray-700 text-center">支持数据钻取、预警提醒和手势操作，快速响应业务变化</p>
+                </div>
+                
+                <div class="bg-light rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3 text-center">KPI归因分析</h3>
+                    <p class="text-gray-700 text-center">针对未达标KPI自动关联可能因素，快速定位问题</p>
+                </div>
+                
+                <div class="bg-light rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-handshake-o text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3 text-center">跨部门协作入口</h3>
+                    <p class="text-gray-700 text-center">支持市场与销售部门的协同工作，提升整体效率</p>
+                </div>
+                
+                <div class="bg-light rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-magic text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3 text-center">个性化与效率工具</h3>
+                    <p class="text-gray-700 text-center">支持自定义看板、快速导出和语音播报，提升工作效率</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Roles Section -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">用户角色与权限</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-user text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">销售经理</h3>
+                        <p class="text-gray-500">一线管理层</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>查看直接下属医药代表的KPI进度</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>按时间、KPI类型筛选数据</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>查看KPI达成率、完成明细</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>接收未达标预警和关联行动项</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-users text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">区域总监</h3>
+                        <p class="text-gray-500">二级管理层</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>查看所辖区域KPI全景</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>TOP3/末3排名和核心指标趋势</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>支持drill-down数据钻取</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>穿透到具体客户/产品维度</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-bullhorn text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">市场部管理层</h3>
+                        <p class="text-gray-500">市场管理层</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>查看负责区域/产品线销售KPI</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>关联市场活动转化数据</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>市场活动触达率→销售转化比</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-success mr-2 mt-1"></i>
+                            <span>区域销售与市场投入ROI分析</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-6">了解更多</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">REP360为销售团队提供全方位的KPI可视化管理解决方案</p>
+            <a href="index.html" class="border-2 border-primary text-primary font-semibold py-3 px-8 rounded-lg hover:bg-primary hover:text-white transition duration-300 inline-flex items-center justify-center">
+                <i class="fa fa-home mr-2"></i>
+                返回公司首页
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2026 AureliAxis Pharmaceuticals. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
